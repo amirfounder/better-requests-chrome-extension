@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Bette Requests",
+  "version": "0.0.1",
+  "author": "Amir Sharapov",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "storage",
+    "background"
+  ]
+}
