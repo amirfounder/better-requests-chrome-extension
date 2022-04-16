@@ -16,7 +16,7 @@ const timeout_handler = () => {
   } else {
     console.log('Dom finsihed mutating. Sending HTTP request to server ...')
     observer.disconnect()
-    fetch('http://localhost:8081', {
+    fetch('http://localhost:8080', {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(document.documentElement.outerHTML)

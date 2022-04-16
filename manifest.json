@@ -1,11 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Bette Requests",
+  "name": "Better Requests",
   "version": "0.0.1",
   "author": "Amir Sharapov",
-  "background": {
-    "service_worker": "background.js"
-  },
   "content_scripts": [
     {
       "matches": [
